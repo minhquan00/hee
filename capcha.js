@@ -452,7 +452,7 @@ async function startthread(targetURL, browserProxy, task, done, retries = 0) {
                     response.browserProxy,
                     response.userAgent,
                     response.cookies,
-                    "--query"
+                    "--query",
                     "--debug"
                     
                 ]);
@@ -520,3 +520,4 @@ main().catch(err => {
     colored(colors.COLOR_RED, "[ERROR] Main function error: " + err.message);
     process.exit(1)
 });
+
